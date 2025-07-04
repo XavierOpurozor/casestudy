@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAXZ Website Explanation</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .section-html {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      background-color: #fdfdfd;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    .code {
+      background: #eee;
+      padding: 15px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .preview-frame {
+      width: 100%;
+      height: 90vh;
+      border: 3px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>BAXZ Website Structure</h1>
+  <p>As the CEO of NXH, I'm walking you through this basic structure of the BAXZ website layout. This is a lightweight HTML layout ready to be enhanced with custom CSS. Below, I explain the purpose of each section and how it contributes to the overall user experience and brand presentation.</p>
+
+  <section>
+    <h2>Header</h2>
+    <p>
+      The header section is the starting point for every visitor. It introduces the brand name "BAXZ" and provides a basic navigation bar. The navigation includes links to the home page, about section, services section, and contact form. While the links are currently empty or anchored to page sections, they form the core of how users move around the site.
+    </p>
+    <div class="section-html">
+&lt;div id="header"&gt;
+  &lt;div class="logo"&gt;
+    &lt;p&gt;BAXZ&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="nav"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;about&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#service"&gt;services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#contact"&gt;contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </div>
+  </section>
+
+  <section>
+    <h2>Banner</h2>
+    <p>
+      This section acts as the hero area of the page. It delivers a bold first impression with a short message and a "Get Started" button. It's a placeholder for marketing or brand messaging, and it's where users' attention is immediately drawn.
+    </p>
+    <div class="section-html">
+&lt;div class="banner"&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur, &lt;br&gt; adipisicing elit. Qui, cupiditate!&lt;/p&gt;
+  &lt;button&gt;get started&lt;/button&gt;
+&lt;/div&gt;
+    </div>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <p>
+      The services section introduces four core services using images and labels. Each service block consists of an image and a caption. In the live version, these would ideally be linked to more detailed pages or modals. The use of images adds visual clarity and a modern feel.
+    </p>
+    <div class="section-html">
+&lt;div id="service"&gt;
+  &lt;h1&gt;services&lt;/h1&gt;
+  &lt;div class="serve"&gt;
+    &lt;div&gt;
+      &lt;img src="/img/pexels-andreas-barth-1131774.jpg" alt=""&gt;
+      &lt;p&gt;service 1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img src="/img/pexels-anıl-karakaya-9964624.jpg" alt=""&gt;
+      &lt;p&gt;service 2&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img src="/img/pexels-brett-sayles-5203857.jpg" alt=""&gt;
+      &lt;p&gt;service 3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img src="/img/pexels-tima-miroshnichenko-6474492 (1).jpg" alt=""&gt;
+      &lt;p&gt;service 4&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      The contact section is split into two parts. On the left is a form that collects user information: name, email, and message. This is where potential customers or partners can get in touch. On the right is a Google Map embed showing a location in Ikeja GRA, Lagos. This adds physical credibility and reachability to the digital experience.
+    </p>
+    <div class="section-html">
+&lt;div id="contact"&gt;
+  &lt;h1&gt;contact us&lt;/h1&gt;
+  &lt;div class="emeka"&gt;
+    &lt;div class="left"&gt;
+      &lt;form action=""&gt;
+        &lt;input type="text" placeholder="Enter your Full Name"&gt;
+        &lt;input type="text" placeholder="Enter your Email Address"&gt;
+        &lt;textarea placeholder="Enter your Message"&gt;&lt;/textarea&gt;
+        &lt;button&gt;submit&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class="right"&gt;
+      &lt;iframe src="..."&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </div>
+  </section>
+
+  <section>
+    <h2>Footer</h2>
+    <p>
+      This is the closing section of the site. It includes three parts: the brand name, a set of useful links (like terms and privacy), and social media icons powered by Boxicons. These icons are placeholders, and with links added, they can drive real engagement to social platforms. The final footer note declares copyright and the year.
+    </p>
+    <div class="section-html">
+&lt;div id="footer"&gt;
+  &lt;div class="foot1"&gt;
+    &lt;div&gt;&lt;p&gt;BAXZ&lt;/p&gt;&lt;/div&gt;
+    &lt;div&gt;
+      &lt;h2&gt;useful links&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;privacy policy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;terms and condition&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="socials"&gt;
+      &lt;h2&gt;social links&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;i class='bx bxl-facebook'&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class='bx bxl-instagram'&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class='bx bxl-twitter'&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class='bx bxl-tiktok'&gt;&lt;/i&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="foot2"&gt;
+  &lt;p&gt;all right reserved | &copy; copyright BAXZ 2025&lt;/p&gt;
+&lt;/div&gt;
+    </div>
+  </section>
+
+
+
+  <section>
+    <h2>Global Styling</h2>
+    <p>
+      The first rule in our stylesheet resets padding and margin across all elements using the universal selector (<code>*</code>). This ensures consistency across browsers. We also set <code>box-sizing: border-box</code> for predictable layout behavior.
+    </p>
+    <p>
+      The root font size is defined as <code>10px</code>, which makes rem-based sizing easier to calculate (e.g., 1.6rem = 16px). We also define two CSS variables: <strong>--main</strong> (purple) for the main brand color and <strong>--primary</strong> (yellow) for highlights and accents.
+    </p>
+    <div class="code">
+:root {
+  --main: purple;
+  --primary: yellow;
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Header</h2>
+    <p>
+      The header uses Flexbox to space content between the logo and the navigation. It features a bold purple background (our brand’s main color), with white navigation text that turns yellow on hover. The logo text is highlighted in yellow for contrast and brand recall.
+    </p>
+    <p>
+      The navigation links are capitalized for consistency and professionalism. Font sizes are increased for readability and brand presence.
+    </p>
+    <div class="code">
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background-color: var(--main);
+}
+.nav a {
+  color: white;
+  font-size: 2rem;
+}
+.nav a:hover {
+  color: var(--primary);
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Banner</h2>
+    <p>
+      The banner section uses a full-screen background image for visual impact. It’s styled with <code>background-size: cover</code> and <code>background-position: center</code> to keep the image looking good on all screen sizes.
+    </p>
+    <p>
+      The call-to-action text is styled in white, and the button inherits our purple color theme. On hover, the button stays consistent for now — but could be enhanced later with transition effects or shadow.
+    </p>
+    <div class="code">
+.banner {
+  background-image: url(../img/pexels-tima-miroshnichenko.jpg);
+  height: 100vh;
+  padding: 12% 5%;
+  background-size: cover;
+  background-position: center;
+}
+.banner button {
+  background-color: var(--main);
+  color: white;
+  padding: 10px;
+  border-radius: 1rem;
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <p>
+      This section showcases four service cards side-by-side using Flexbox. Each service card includes an image and a title. Cards have soft rounded corners, a purple background, and a yellow glow via <code>box-shadow</code>.
+    </p>
+    <p>
+      On hover, each card lifts slightly using <code>transform: translateY(-15px)</code> for a dynamic, modern effect. This adds interactivity and responsiveness to the user experience.
+    </p>
+    <div class="code">
+.serve {
+  display: flex;
+  justify-content: space-between;
+}
+.serve > div {
+  background-color: var(--main);
+  box-shadow: 0 0 30px var(--primary);
+  transition: 0.5s;
+}
+.serve > div:hover {
+  transform: translateY(-15px);
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      The contact section is split into two columns: a form on the left and a Google Map on the right. Flexbox is used again for layout. Inputs and textarea fields are styled for size and clarity, and they receive a purple border highlight on focus.
+    </p>
+    <p>
+      The submit button is styled with purple as the background, white text, and a hover state that inverts colors to draw attention and indicate interactivity.
+    </p>
+    <div class="code">
+.left input, .left textarea {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.left input:focus, .left textarea:focus {
+  border: 2px solid var(--main);
+}
+.left button {
+  background-color: var(--main);
+  color: white;
+  border-radius: 0.5rem;
+}
+.left button:hover {
+  background-color: var(--primary);
+  color: black;
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Footer</h2>
+    <p>
+      The footer is divided into a top and bottom part. The top features the brand, quick links, and social icons laid out in Flexbox. The bottom displays copyright info.
+    </p>
+    <p>
+      All text uses white for readability on a purple background, while headings and icons follow the yellow accent color. Social icons are styled with Boxicons and spaced with Flex.
+    </p>
+    <div class="code">
+#footer {
+  background-color: var(--main);
+}
+.foot1 {
+  display: flex;
+  justify-content: space-between;
+}
+.foot1 i {
+  color: var(--primary);
+}
+.foot2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2% 0;
+}
+    </div>
+  </section>
+
+  <section>
+    <h2>Live BAXZ Website Preview</h2>
+    <p>
+      Below is a full preview of the actual BAXZ site layout, running in real time. This lets you interact with the buttons, explore the sections, and visualize how our design philosophy at NXH turns raw code into beautiful function.
+    </p>
+    <iframe src="casestudy.html" class="preview-frame" title="BAXZ Website Live Preview"></iframe>
+  </section>
+  <a href="casestudy.html" style="text-decoration: none; text-align: center;" target="_blank"><h4>Or click here to view the BAXZ Website in your browser.</h4></a>
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      The BAXZ layout and styling reflect NXH’s commitment to clean, modern, and accessible design. With a strong brand color system, responsive layouts via Flexbox, and intuitive user interface patterns, this site is ready to evolve into a full-scale product. Our next steps could include media queries, animation transitions, or even component-based JavaScript integration.
+    </p>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
